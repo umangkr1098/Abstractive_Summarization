@@ -1,5 +1,5 @@
 pip==23.0.1
-numpy==1.21.2
+numpy==1.24.2
 streamlit==0.87.0
 keras~=2.4.3
 tensorflow-cpu
