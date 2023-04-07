@@ -15,7 +15,7 @@ def find_summary(context):
     context="summarize: " + context
 
     input_ids = tokenizer.encode(context, return_tensors='tf')
-    beam_output = m.generate(input_ids,max_length = 60,num_beams=5,temperature=0.6)
+    beam_output = m.generate(input_ids,max_length = 80,num_beams=6,temperature=0.6)
     output=tokenizer.decode(beam_output[0],skip_special_tokens=True)
     return output
 
