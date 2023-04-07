@@ -4,8 +4,8 @@ from transformers import T5Tokenizer, TFT5ForConditionalGeneration
 tokenizer = T5Tokenizer.from_pretrained('t5-small')
 import numpy as np
 
-#@st.cache(allow_output_mutation=True)
-@st.cache_resource
+@st.cache(allow_output_mutation=True)
+#@st.cache_resource
 def get_t5():
     model=TFT5ForConditionalGeneration.from_pretrained('t5-small')
     return model
